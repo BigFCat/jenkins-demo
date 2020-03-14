@@ -12,7 +12,7 @@ spec:
       labels:
         app: jenkins-demo
     spec:
-      imagePullSecret: 
+      imagePullSecrets: 
       - name: harbor-registry
       containers:
       - image: registry.uprain.cn/library/jenkins-demo:<BUILD_TAG>
