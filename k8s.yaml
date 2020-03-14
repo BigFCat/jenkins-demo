@@ -12,6 +12,8 @@ spec:
       labels:
         app: jenkins-demo
     spec:
+      imagePullSecret: 
+      - name: harbor-registry
       containers:
       - image: registry.uprain.cn/library/jenkins-demo:<BUILD_TAG>
         imagePullPolicy: IfNotPresent
